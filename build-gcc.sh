@@ -58,7 +58,7 @@ build_binutils() {
     --disable-werror \
     --enable-gold \
     --prefix="$PREFIX" \
-    --with-pkgversion="Eva Binutils" \
+    --with-pkgversion="Furry Binutils" \
     --with-sysroot
   make -j$(($(nproc --all) + 2))
   make install -j$(($(nproc --all) + 2))
@@ -98,7 +98,7 @@ build_gcc() {
     --with-headers="/usr/include" \
     --with-linker-hash-style=gnu \
     --with-newlib \
-    --with-pkgversion="Eva GCC" \
+    --with-pkgversion="Furry GCC" \
     --with-sysroot
 
   make all-gcc -j$(($(nproc --all) + 2))
